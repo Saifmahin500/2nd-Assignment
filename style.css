@@ -31,6 +31,7 @@ body{
 .menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .menu li{
     list-style: none;
@@ -40,9 +41,9 @@ body{
     font-weight: 500;
 }
 #Follow{
-    border: 1px solid black;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #E7E6E9;
+    border-radius: 8px;
 }
 
 /* this is banner section */
@@ -98,10 +99,32 @@ body{
     background-color: #4EC5F7;
 }
 .primary-color{
-    color: #AB53DD;
+    color: #a849df;
     font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+/* this is online game section */
+
+.game-contain{
+    text-align: center;
+    margin-top: 100px;
+}
+.game-color{
+    color: #a849df;
+}
+
+.game-image{
+    text-align: center;
+    padding: 50px;
+ 
+}
+
+
+.gameimg{
+    width: 250px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 576px) {
