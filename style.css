@@ -19,7 +19,7 @@ body{
     align-items: center;
     gap: 10px;
 }
-#g{
+.g{
     color: #FF42A5;
 }
 .logo-contain{
@@ -126,6 +126,45 @@ body{
     width: 250px;
     padding: 10px;
 }
+
+/* this is play instantly section */
+
+.Play-Instantly-container{
+    display: flex;
+    padding: 120px 120px;
+    gap: 200px;
+    
+}
+.Play-Instantly-contain{
+    width: 50%;
+    text-align: center;
+    margin-top: 120px;
+  
+}
+.Play-Instantly-image{
+    width: 50%;
+    /* margin-left: 250px; */
+}
+.Play-Instantly-image img {
+    width: 480px;
+}
+.image-2 img{
+    width: 250px;
+    position: relative;
+    bottom: 170px;
+    right: 85px;
+}
+
+/* this is footer container */
+
+.footer-container{
+    height: 80vh;
+    background-color: #0B0223;
+}
+/* #last-titel{
+    color: white; 
+} */
+
 
 @media screen and (max-width: 576px) {
 
