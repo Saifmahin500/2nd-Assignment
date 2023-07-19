@@ -6,8 +6,7 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 .header-container{
-    /* width: 90%; */
-    height: 90px;
+    height: 90px; 
     background-color: #FCFBFE;
     padding: 20px;
     display: flex;
@@ -48,17 +47,17 @@ body{
 
 /* this is banner section */
 .banner-container{
-    /* width: 90%; */
     height: 80vh;
-    background-image: url("images/Group\ 14.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: space-around;
     padding: 40px; 
 }
 .banner-contain{
+    width: 50%;
+    background-image: url("images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
       padding: 80px;
       margin-top: 90px;
    
@@ -184,7 +183,7 @@ body{
 }
 .Play-Instantly-image{
     width: 50%;
-    /* margin-left: 250px; */
+    
 }
 .Play-Instantly-image img {
     width: 480px;
@@ -237,19 +236,14 @@ body{
 
 /* this is footer container */
 footer{
-    height: 80vh;
     background-color: #0B0223;
 }
-
 .footer-container{
    
     display: flex;
     align-items: center;
     margin-left: 480px;
-    text-align: center;
-    
-   
-    
+    text-align: center;    
 }
 .footer-titel{
     
@@ -259,19 +253,20 @@ footer{
 }
 .footer-conatain{
     display: flex;
-
 }
-/* .footer-conatain div{
-    margin-top: 66px;
-} */
-.menu2 li{
+
+.menu2{
    
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     color: white;
     list-style: none;
     font-size: 18px;
     font-weight: 600;
     margin-top: 65px;
+    margin-left: 30px;
 }
+
 .menu3 li{
     margin-top: 66px;
     margin-bottom: 66px;
@@ -284,29 +279,91 @@ footer{
 
 }
 
-/* #last-titel{
-    color: rgb(255, 255, 255); 
-} */
-
-
 @media screen and (max-width: 576px) {
-
+   
     .header-container
     {
         flex-direction: column;
-        margin-top: 50px;
+        /* margin-top: 50px; */
+        width: 950px;
+        padding: 80px;
+        
     }
     .menu{
         flex-direction: column;
         gap: 10px;
         margin-top: 30px;
     }
-    /* .banner-container{
-        flex-direction: column;
+    .banner-container{
+        width: 950px;
+        flex-direction: column-reverse;
         margin-top: 500px;
         text-align: center;
     }
-     */
+    .banner-contain{
+        width: 950px;
+
+    }
+    .online-game-container{
+        width: 950px;
+    }
+    .game-contain{
+        margin-top: 400px;
+        margin-left: 200px;
+
+    }
+    .game-image{
+        flex-direction: column;
+        margin-left: 200px;
+    }
+
+    .Play-Instantly-container{
+        width: 950px;
+        flex-direction: column;
+    }
+    .Play-Instantly-contain{
+        margin: auto;
+    }
+    .Play-Instantly-image{
+        margin: auto;
+    }
+    footer{
+        width: 950px;
+    }
+    .button-part1{
+        margin: auto;
+        margin-bottom: 20px;
+       
+        
+    }
+    .button-container{
+        margin-bottom: 70px;
+        
+    }
+    
+    footer div{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .footer-container{
+   
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+        text-align: center;
+        flex-wrap: wrap;             
+    }
+    .menu2{
+        display: grid;
+    grid-template-columns: repeat(3,2fr);
+    margin-left: 100px;
+
+    }
+    .icon{
+        flex-wrap: wrap;
+    }
+   
 
     
 }
