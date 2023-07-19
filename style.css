@@ -118,8 +118,49 @@ body{
 .game-image{
     text-align: center;
     padding: 50px;
+    display: flex;
  
 }
+.container {
+    position: relative;
+    width: 250px;
+
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.7;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: transparent;
+    color: rgb(206, 24, 127);
+    font-size: 20px;
+    padding: 16px 32px;
+  }
 
 
 .gameimg{
@@ -131,7 +172,7 @@ body{
 
 .Play-Instantly-container{
     display: flex;
-    padding: 120px 120px;
+    padding: 80px 120px;
     gap: 200px;
     
 }
@@ -154,15 +195,97 @@ body{
     bottom: 170px;
     right: 85px;
 }
+/* this is button section */
+.button-container{
+    height: 30vh;
+   margin-left: 80px;
+   margin-top: 0;
+   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+.button-part1{
+    display: flex;
+    margin-bottom: 25px;
+   
+}
+.button-part1 div{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+.button-part1 div:hover{
+    border: 1px solid skyblue;
+}
+.button-part2{
+    display: flex;
+}
+.button-part2 div{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+.button-part2 div:hover{
+    border: 1px solid skyblue;
+}
 
 /* this is footer container */
-
-.footer-container{
+footer{
     height: 80vh;
     background-color: #0B0223;
 }
+
+.footer-container{
+   
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+    text-align: center;
+    
+   
+    
+}
+.footer-titel{
+    
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.footer-conatain{
+    display: flex;
+
+}
+/* .footer-conatain div{
+    margin-top: 66px;
+} */
+.menu2 li{
+   
+    color: white;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 65px;
+}
+.menu3 li{
+    margin-top: 66px;
+    margin-bottom: 66px;
+}
+.icon{
+    display: flex;
+  margin-left: 400px;
+    font-size: 30px;
+    margin-top: 65px;
+
+}
+
 /* #last-titel{
-    color: white; 
+    color: rgb(255, 255, 255); 
 } */
 
 
