@@ -6,6 +6,7 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 .header-container{
+    width: auto;
     height: 90px; 
     background-color: #FCFBFE;
     padding: 20px;
@@ -267,9 +268,17 @@ footer{
     margin-left: 30px;
 }
 
-.menu3 li{
+.menu3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: rgb(124, 121, 121);
+    list-style: none;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 30px;
     margin-top: 66px;
     margin-bottom: 66px;
+    
 }
 .icon{
     display: flex;
@@ -278,14 +287,17 @@ footer{
     margin-top: 65px;
 
 }
+small{
+    margin-left: 400px;
+    
+ }
 
 @media screen and (max-width: 576px) {
    
     .header-container
     {
         flex-direction: column;
-        /* margin-top: 50px; */
-        width: 950px;
+        width: 100%;
         padding: 80px;
         
     }
@@ -295,30 +307,33 @@ footer{
         margin-top: 30px;
     }
     .banner-container{
-        width: 950px;
+        width: 100%;
         flex-direction: column-reverse;
         margin-top: 500px;
         text-align: center;
     }
     .banner-contain{
-        width: 950px;
+        width: 100%;
+        
 
     }
     .online-game-container{
-        width: 950px;
+        width: 100%;
     }
     .game-contain{
         margin-top: 400px;
-        margin-left: 200px;
+        margin-left: 280px;
+        
 
     }
     .game-image{
         flex-direction: column;
         margin-left: 200px;
+        
     }
 
     .Play-Instantly-container{
-        width: 950px;
+        width: 100%;
         flex-direction: column;
     }
     .Play-Instantly-contain{
@@ -350,18 +365,34 @@ footer{
    
         flex-direction: column;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 30px;
         text-align: center;
         flex-wrap: wrap;             
     }
     .menu2{
         display: grid;
     grid-template-columns: repeat(3,2fr);
-    margin-left: 100px;
-
+    gap: 60px;
+    margin-left: 180px;
+    margin-bottom: 10px;
     }
+    .menu3{
+        display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 60px; 
+    margin-left: 200px;
+    }
+
     .icon{
-        flex-wrap: wrap;
+       flex-direction: row;
+       margin-left: 0;
+       margin-left: 200px;
+       padding: 50px;
+    }
+    small{
+       
+       margin-left: 150px;
+       
     }
    
 
